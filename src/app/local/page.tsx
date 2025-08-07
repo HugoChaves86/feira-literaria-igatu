@@ -19,8 +19,8 @@ export default function LocalPage() {
 
       <div className="container mx-auto py-16 px-4 text-lg text-stone-700">
         <div className="max-w-4xl mx-auto">
-          <p className="mb-6 md:text-justify">
-            Bem-vindo a Igatu, um distrito de Andaraí cravado no coração do Parque Nacional da Chapada Diamantina. Conhecida como a "Machu Picchu baiana", a vila é famosa por suas ruas de pedra e ruínas de casas de garimpeiros do século XIX, um testemunho vivo do ciclo do diamante na região.
+          <p className="mb-6">
+            Bem-vindo a Igatu, um distrito de Andaraí cravado no coração do Parque Nacional da Chapada Diamantina. Conhecida como a “Machu Picchu baiana”, a vila é famosa por suas ruas de pedra e ruínas de casas de garimpeiros do século XIX, um testemunho vivo do ciclo do diamante na região.
           </p>
           <p className="mb-12 md:text-justify">
             A atmosfera única de Igatu, onde a história e a natureza se encontram, faz dela o cenário perfeito para um evento que celebra a palavra e a arte. Perca-se em suas vielas, explore a galeria de arte a céu aberto e sinta a inspiração que emana de cada pedra.

@@ -1,31 +1,3 @@
-// import type { Metadata } from 'next'
-// import './globals.css'
-// import Header from '@/components/Header'
-// import Footer from '@/components/Footer'
-
-// export const metadata: Metadata = {
-//   title: 'Feira Literária de Igatu',
-//   description: 'O maior evento literário da Chapada Diamantina.',
-// }
-
-// export default function RootLayout({
-//   children,
-// }: Readonly<{
-//   children: React.ReactNode;
-// }>) {
-//   return (
-//     <html lang="pt-BR">
-//       <body>
-//         <Header />
-//         <main>{children}</main>
-//         <Footer />
-//       </body>
-//     </html>
-//   )
-// }
-
-// src/app/layout.tsx
-
 import type { Metadata } from 'next'
 // 1. Importe as novas fontes que usaremos do Google Fonts
 import { Lora, Source_Sans_3 } from 'next/font/google' 

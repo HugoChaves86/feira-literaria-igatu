@@ -1,5 +1,3 @@
-// src/app/contato/page.tsx
-
 export default function ContatoPage() {
   return (
     <div className="bg-stone-50 py-16 md:py-24">
