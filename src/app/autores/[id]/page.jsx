@@ -8,7 +8,7 @@ export async function generateStaticParams() {
   }));
 }
 
-export default async function AutorDetailPage({ params }: { params: { id: string } }) {
+export default async function AutorDetailPage({ params }) {
   const autor = await getAutorById(params.id);
 
   return (
@@ -21,11 +21,13 @@ export default async function AutorDetailPage({ params }: { params: { id: string
               alt={`Foto de ${autor.name}`}
               fill={true}
               style={{objectFit: 'cover'}}
+              priority={true}
             />
           </div>
           <h1 className="text-5xl font-bold text-stone-800">{autor.name}</h1>
           <p className="text-xl text-stone-600 mt-2">{autor.title}</p>
         </div>
+        
         <div 
           className="prose lg:prose-xl max-w-4xl mx-auto"
           dangerouslySetInnerHTML={{ __html: autor.contentHtml }} 
