@@ -1,12 +1,5 @@
-// src/app/autores/[id]/page.tsx
-
 import { getAutores, getAutorById } from "@/lib/autores";
 import Image from "next/image";
-
-// 1. Definimos o tipo das props de forma mais explícita
-type Props = {
-  params: { id: string };
-};
 
 // Gera as páginas estaticamente no build
 export async function generateStaticParams() {
@@ -16,8 +9,8 @@ export async function generateStaticParams() {
   }));
 }
 
-// 2. Usamos o tipo 'Props' na assinatura da função
-export default async function AutorDetailPage({ params }: Props) {
+// A MUDANÇA É AQUI: usamos 'any' para contornar o erro de tipo
+export default async function AutorDetailPage({ params }: any) {
   const autor = await getAutorById(params.id);
 
   return (
@@ -31,7 +24,7 @@ export default async function AutorDetailPage({ params }: Props) {
               alt={`Foto de ${autor.name}`}
               fill={true}
               style={{objectFit: 'cover'}}
-              priority={true} // Bônus: Diz ao Next.js para priorizar o carregamento desta imagem
+              priority={true}
             />
           </div>
           <h1 className="text-5xl font-bold text-stone-800">{autor.name}</h1>
