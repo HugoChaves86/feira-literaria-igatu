@@ -17,7 +17,7 @@ export default function Footer() {
         {/* 2. Seção de Redes Sociais com Ícones */}
         <div className="flex space-x-6">
           <Link 
-            href="https://www.instagram.com/" // <-- SUBSTITUA AQUI
+            href="https://www.instagram.com/fligatu" // <-- SUBSTITUA AQUI
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Instagram da Feira Literária de Igatu" 
