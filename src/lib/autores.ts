@@ -28,7 +28,6 @@ export function getAutoresDestaque() {
   return todosAutores.filter(autor => autor.featured);
 }
 
-// A FUNÇÃO QUE NOSSO NOVO COMPONENTE PRECISA
 export async function getAutorById(id: string) {
   const fullPath = path.join(autoresDirectory, `${id}.md`);
   const fileContents = fs.readFileSync(fullPath, 'utf8');
